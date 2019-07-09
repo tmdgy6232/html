@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        span.sa, span.sb, span.sc{
+            border: 1px solid blue;
+            background-color: green;
+            color: blue;
+        }
+
+        /* spna tag는 기본 display 속성이 inline*/
+        span.sa{
+            display: inline;
+            width: 100px;
+            height: 100px;
+        }
+        /* inline-block
+        width height를 지정하여 박스크기를 만들 수 있지만
+        inline과 같은 글자로서의 속성을 일부 유지한다.*/
+        span.sb{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+        /* block
+           일반적인 block tag 성질을 그대로 모두 물려받는다.
+           */
+        span.sc{
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+        <div id="div1">
+                <span class="sa">교육의 자주성·전문성·정치적 중립성</span> 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.
+                 대한민국은 통일을 지향하며, <span class="sb">자유민주적 기본질서</span>에 입각한 평화적 통일 정책을 수립하고 이를 추진한다. 
+                 공공필요에 의한 재산권의 수용·사용 또는 제한 및 그에 대한 보상은 법률로써 하되, 정당한 보상을 지급하여야 한다. 
+                 모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 
+                 법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다. 여자의 근로는 <span class="sc">특별한 보호</span>를 받으며, 고용·임금 및 근로조건에 있어서 
+                 부당한 차별을 받지 아니한다.
+                
+                </div>
+</body>
+</html>
