@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+
+        var txt = "Republic of Korea, korea is my home"
+        document.write("문자열의 길이 : " + txt.length + "<br/>");
+        document.write("of 문자열의 위치 :" + txt.indexOf("of")+ "<br/>")
+        document.write("korea 문자열의 마지막 위치 :" + txt.lastIndexOf("korea")+ "<br/>")
+
+        // js에 문자열 덧셈은 문자열 연결이다
+        var num1 = "30"
+        var num2 = "40"
+        var sum = num1 + num2
+        document.write(sum+ "<br/>")
+
+        //문자열 형 숫자를 숫자형으로 바꿀때는 parseint000의 형식의 함수를 사용한다.
+        // 문자열로 사용하던 sum 변수에 int형 값을 저장하고 있다.
+        // 문법오류 없이 정상적인 수행이 된다.
+        // 매우 주의해서 사용해야할 문법구조이다.
+        sum = parseInt(num1) +  parseInt(num2)
+        sun = Number(num1) + Number(num2)
+        //문자열 앞뒤에 있는 빈칸은 무시하고 숫자를 바꾼다.
+        sum = Number("        20") + Number("30       ")
+        document.write(sum+ "<br/>")
+
+        //숫자를 숫자로 인식하지 못할경우는 nan이라는 ㅜㅁㄴ자열로 변환시켜 버린다.
+        // nan = not a number
+        sum = Number("20    30")
+        document.write(sum+ "<br/>")
+    </script>
+
+</head>
+
+<body>
+
+</body>
+</html>

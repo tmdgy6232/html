@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        header{
+            padding: 1rem;
+            background-color: brown;
+        }
+        nav.main-menu{
+            background-color: rgb(46, 117, 182);
+            display: flex;
+        }
+        nav.main-menu img{
+            height: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/menu/mylogo.png">
+
+    </header>
+    <nav class="main-menu">
+        <img id="m-home" src="../images/menu/menu-home.png">
+        <img id="m-book" src="../images/menu/menu-book.png">
+        <img id="m-read" src="../images/menu/menu-read.png">
+        <img id="m-login" src="../images/menu/menu-login.png">
+        <img id="m-body" src="../images/menu/menu-join.png">
+
+    </nav>    
+</body>
+<script>
+    var img_home = document.getElementById("m-home");
+    var img_book = document.getElementById("m-book");
+    var img_read = document.getElementById("m-read");
+    var img_login = document.getElementById("m-login");
+    var img_join = document.getElementById("m-join");
+
+    //마우스가 이미지에 올려졌을때
+    img_home.onmouseover = function() {
+        img_home.src = "../images/menu/menu-home-h.png"
+    }
+    //마우스가 미지를 벗어났을 때
+    img_home.onmouseout = function() {
+        img_home.src = "../images/menu/menu-home.png"
+    }
+    img_book.onmouseover = function() {
+        img_book.src = "../images/menu/menu-book-h.png"
+    }
+    //마우스가 미지를 벗어났을 때
+    img_book.onmouseout = function() {
+        img_book.src = "../images/menu/menu-book.png"
+    }
+    img_read.onmouseover = function() {
+        img_read.src = "../images/menu/menu-read-h.png"
+    }
+    //마우스가 미지를 벗어났을 때
+    img_read.onmouseout = function() {
+        img_read.src = "../images/menu/menu-read.png"
+    }
+    img_login.onmouseover = function() {
+        img_login.src = "../images/menu/menu-login-h.png"
+    }
+    //마우스가 미지를 벗어났을 때
+    img_login.onmouseout = function() {
+        img_login.src = "../images/menu/menu-login.png"
+    }
+    img_join.onmouseover = function() {
+        img_join.src = "../images/menu/menu-join-h.png"
+    }
+    //마우스가 미지를 벗어났을 때
+    img_join.onmouseout = function() {
+        img_join.src = "../images/menu/menu-join.png"
+    }
+</script>
+</html>
