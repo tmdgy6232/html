@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+div.block{
+
+        display: block;
+        width: 800px;
+        border: 1px solid #ccc;
+        height: 100px;
+
+
+}
+div.submenu{
+    display: flex;
+    margin: 10px 10px 3px 10px;
+
+
+}
+
+div.submenu .sub2{
+
+    width: 500px;
+    
+}
+.content{
+
+    padding-left: 20px;
+    width: 700px;
+    height: 50px;
+    overflow: auto;
+    border: 1px solid #ccc;
+
+}
+a{
+    font-style: italic;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+</style>
+<body>
+    <!-- 댓글-->
+    <div class="block">
+        <!--작성자, 작성일자-->
+        <div class="submenu">
+            <div class="sub1">작성자</div>
+            <div class="sub2"></div>
+            <div class="sub3">작성일자</div>
+        </div>
+        <!--내용        -->
+        <div class="content">내용</div>
+    </div>
+
+    <!-- 댓글 입력-->
+    <div class="block">
+        <div class="submenu">   
+
+            <div class="sub1">작성자</div>
+            <div class="sub2"></div>
+            <div class="sub3">작성일자</div>
+
+        </div>
+
+        <textarea class="content">작성내용</textarea>
+        <button class="reply_btn">등록</button>
+    </div>
+
+    <!-- 댓글을 입력하려고 하시면 로그인 하십쇼    -->
+
+    <div class="block">
+        <div><a href="#">여기</a>를 클릭하시면 로그인페이지로 이동합니다.</div>
+    </div>
+
+    <!--댓글 아무것도 없을 때-->
+
+    <div class="block">
+
+        <div>첫 댓글의 주인공이 되어보세요~<a href="#">클릭</a> </div>
+
+    </div>
+
+    
+</body>
+</html>

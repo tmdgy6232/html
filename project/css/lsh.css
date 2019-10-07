@@ -1,0 +1,136 @@
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        div.top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+        
+        div.top1 {
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        
+        div.top2 {
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        
+        div.top3 {
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        
+        div.pullbody {
+            display: flex;
+            height: 100%;
+        }
+        
+        div.leftbody {
+            display: flex;
+            background-color: pink;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            width: 15%;
+            text-align: center;
+            padding-left: 5%;
+            height: 100%;
+            justify-content: center;
+        }
+        
+        section p {
+            position: relative;
+            border: 1px solid blue;
+            padding: 10px;
+            background-color: aqua;
+            border-radius: 5%;
+            width: 50%;
+        }
+        
+        section p:hover {
+            background-color: bisque;
+        }
+        
+       
+        
+        table {
+            width: 90%;
+            
+        }
+
+        table tr th.th1{
+            width: 10px;
+        }
+        table tr th.th3{
+            width: 70px;
+        }
+        table tr th.th4{
+            width: 100px;
+        }
+
+        table tr td{
+            padding : 10px 0 ;
+            text-align: center;
+        }
+        table tr td.td1{
+            padding: 0 0 0 30px;
+            text-align: left;
+        }
+        
+        tr,
+        th {
+            padding: 10px;
+            margin: 10px;
+            border-collapse: collapse;
+        }
+        
+        div.table {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+        }
+        div.btn-box{
+            display: inline-block;
+            background-color: brown;
+            border: 1px solid blue;
+            padding: 5px;
+            margin : 15px auto;
+        }
+        #btn {
+            text-align: right;
+            width: 90%;
+            border: 1px solid black;
+            padding: 10px;
+            margin : 15px auto;
+        }
+        #btn button{
+            background-color: burlywood;
+            padding : 10px;
+            border-radius: 6px;
+            margin: 5px auto;
+            
+        }
+        #btn button:hover{
+            background-color: dimgrey;
+            transition: 0.5s;
+        }
+

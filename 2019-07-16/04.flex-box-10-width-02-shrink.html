@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+
+        .container{
+            display: flex;
+            height: 150px;
+            width: 80%;
+            background-color: green;
+            margin-bottom: 20px;
+        }
+        .item{
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 40px;
+            flex-basis: 120px;
+        }
+        .item:nth-child(1){background-color: #ffc447;}
+        .item:nth-child(2){background-color: #e87635;}
+        .item:nth-child(3){background-color: #ff4847;}
+        .item:nth-child(4){background-color: #d335e8;}
+        .item:nth-child(5){background-color: blue;}
+
+        /* container크기가 작아질때 item의 크기를 어떻게 할것인가
+            0 : 그대로 유지
+            1 이상 : 비율에 맞추어 축소
+            단, 최대크기는 바이어스로 지정된 크기보다 크지 않게
+        */
+        .container1 .item:nth-child(1){flex-shrink: 1;}
+        .container1 .item:nth-child(2){flex-shrink: 2;}
+        .container1 .item:nth-child(3){flex-shrink: 0;}
+        .container1 .item:nth-child(4){flex-shrink: 0;}
+        .container1 .item:nth-child(5){flex-shrink: 0;}
+
+        
+        .container2 .item:nth-child(1){flex-shrink: 1;}
+        .container2 .item:nth-child(2){flex-shrink: 3;}
+        .container2 .item:nth-child(3){flex-shrink: 2;}
+        .container2 .item:nth-child(4){flex-shrink: 1;}
+        .container2 .item:nth-child(5){flex-shrink: 1;}
+
+        .item5{
+            flex: 1 0 auto; /* 그로우 1 쉬링크 0 바이어스 오토*/
+            
+            /*
+            WBC에서 권고ㅓ는 방식*/
+            flex-grow: 1;/* 축소할 때 어떻게할래*/
+            flex-shrink: 0;/*확대할때어떻게할래*/
+            flex-basis: auto;/*초기값을 어떻게할래*/
+            
+            
+            flex-grow: 1;/* 축소할 때 어떻게할래*/
+            flex-shrink: 1;/*확대할때어떻게할래*/
+            flex-basis: 150PX;/*초기값을 어떻게할래*/
+            
+        }
+    </style>
+
+    
+
+</head>
+<body>
+    
+    <div class="container container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+       
+    </div>
+
+    <div class="container container2">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item5">5</div>
+           
+        </div>
+    
+    
+</body>
+</html>
